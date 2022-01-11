@@ -61,7 +61,7 @@ shipping options
 
 ### Built With
 
-Project built using Cucumber BDD framework using Java.
+Project built with Cucumber BDD framework using Java.
 
 * [IntelliJ Commnuity Edition](https://www.jetbrains.com/idea/download/#section=windows/)
 * [Cucumber](https://cucumber.io//)
