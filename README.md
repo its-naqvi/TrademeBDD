@@ -61,7 +61,7 @@ shipping options
 
 ### Built With
 
-Following tools and frameworks used to bootstrap your project. 
+Project built using Cucumber BDD framework using Java.
 
 * [IntelliJ Commnuity Edition](https://www.jetbrains.com/idea/download/#section=windows/)
 * [Cucumber](https://cucumber.io//)
