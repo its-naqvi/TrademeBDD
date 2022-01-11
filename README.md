@@ -92,10 +92,10 @@ Clone the repo:
 
 Git:
 ```
-$ https://github.com/its-naqvi/tradeMeBDD.git
+$ git clone https://github.com/its-naqvi/TrademeBDD.git
 ```
 
-Or download a ZIP of master [manually](https://github.com/its-naqvi/tradeMeBDD/archive/refs/heads/master.zip) and expand the contents someplace on your system
+Or download a ZIP of master [manually](https://github.com/its-naqvi/TrademeBDD/archive/refs/heads/master.zip) and expand the contents someplace on your system
 
 <p align="right">(<a href="#top">back to top</a>)</p>
 
@@ -113,19 +113,19 @@ This runs all Cucumber features using TestNG runner.
 At the time of writing, search feature wasn't working on trademe sandbox website. So in order to do used motor search please use the prod environment. 
 
 ### Ideal combination to run this test suite
-Run API tests on tradeMe sandbox environment using Tag @API:
+Run API scenarios on tradeMe sandbox environment using Tag @API:
 ```
      mvn clean test -Denv=STAGE -D"cucumber.filter.tags=@API and @STAGE"
 ```
 
-Run UI tests on tradeMe prod environment using Tag @UI as search feature is not working on Sandbox:
+Run UI scenarios on tradeMe prod environment using Tag @UI as search feature is not working on Sandbox:
 ```
      mvn clean test -Denv=PROD -D"cucumber.filter.tags=@UI and @PROD"
 ```
 
 ### Run a subset of Features or Scenarios
 
-To run only UI cases
+To run only UI scenarios
 ```
      mvn clean test -D"cucumber.filter.tags=@UI"
 ```
@@ -141,7 +141,7 @@ To run only all regression cases
 <p align="right">(<a href="#top">back to top</a>)</p>
 
 ### Run on other Environment
-By default cases execute on trademe sandbox enviornment i.e. STAGE.
+By default scenarios execute on trademe sandbox enviornment i.e. STAGE.
 ```
     mvn test -Denv=STAGE
 ```
@@ -151,13 +151,13 @@ To run on PROD environment i.e. tradem.co.nz
 ```
 
 ### Run on different browsers
-By default cases execute on chrome borwser but you can change the browser. For this test the only other available option is "firefox"
+By default scenarios execute on chrome borwser but you can change the browser. Currently the only other available option is "firefox"
 ```
     mvn clean test -Denv=PROD -D"cucumber.filter.tags=@UI and @PROD" -Dbrowser=firefox
 ```
 
 ### Reports and Logs
-* Cucumber reportes are generated under *".\target"*
+* Cucumber reports are generated under *".\target"*
 * UI Error screenshots are stored *"\test-output\screenshots"* e.g. While clicking couldn't find the web element
 * Logs are saved under *".\logs"*
 
