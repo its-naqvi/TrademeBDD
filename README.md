@@ -116,12 +116,12 @@ At the time of writing:
 
 
 ### Ideal combination to run this test suite
-Run API scenarios on tradeMe sandbox environment using Tag @API:
+Run API scenarios on tradeMe sandbox environment using -Denv=STAGE and Tag @API:
 ```
      mvn clean test -Denv=STAGE -D"cucumber.filter.tags=@API and @STAGE"
 ```
 
-Run UI scenarios on tradeMe prod environment using Tag @UI as search feature is not working on Sandbox:
+Run UI scenarios on tradeMe prod environment using -Devn=PROD and Tag @UI as search feature is not working on Sandbox:
 ```
      mvn clean test -Denv=PROD -D"cucumber.filter.tags=@UI and @PROD"
 ```
