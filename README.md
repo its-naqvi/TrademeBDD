@@ -110,7 +110,10 @@ Or download a ZIP of master [manually](https://github.com/its-naqvi/TrademeBDD/a
 This runs all Cucumber features using TestNG runner.
 
 *IMPORTANT NOTE*
-At the time of writing, search feature wasn't working on trademe sandbox website. So in order to do used motor search please use the prod environment. 
+At the time of writing: 
+1. TradeMe Sandbox UI: Search any kind of listing isn’t working. I tried Motors, Jobs, Books, MarketPlace but no luck. So I automated those cases using TradeMe prod environment.
+2. TradeMe Sandbox API: Search Used Motor API isn’t working so just to demonstrate the authenticated API tests, I’ve utilized RetreiveWatchlist API and added a scenario in the feature file.
+
 
 ### Ideal combination to run this test suite
 Run API scenarios on tradeMe sandbox environment using Tag @API:
