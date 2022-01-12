@@ -155,9 +155,16 @@ To run on PROD environment i.e. tradem.co.nz
 ```
 
 ### Run on different browsers
-By default scenarios execute on chrome borwser but you can change the browser. Currently the only other available option is "firefox"
+By default scenarios execute on chrome borwser but you can change the browser.
+
+####Firefox
 ```
     mvn clean test -Denv=PROD -D"cucumber.filter.tags=@UI and @PROD" -Dbrowser=firefox
+```
+
+####Chrome
+```
+    mvn clean test -Denv=PROD -D"cucumber.filter.tags=@UI and @PROD" -Dbrowser=chrome
 ```
 
 ### Reports and Logs
