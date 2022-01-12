@@ -105,7 +105,7 @@ public class CustomDriver {
             }
         } catch (Exception e) {
             log.error("Cannot click on :: " + info);
-            takeScreenshot("Click ERROR", "");
+            takeScreenshot(info+" Click ERROR", "");
         }
     }
 

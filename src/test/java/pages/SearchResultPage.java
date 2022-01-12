@@ -66,8 +66,8 @@ public class SearchResultPage extends BasePage{
         String searchResultCount = getText(SEARCH_RESULT_COUNT_DIV, "Search Result Count");
         String iCount = StringUtils.substringBetween(searchResultCount, "Showing", "result");
         if (Integer.parseInt(iCount.trim()) > 0){
-            log.info("Search Result Count ::" + searchResultCount);
-            elementClick(String.format(KILOMETER_RESULT, kilometers), "Body Style Dropdown");
+            log.info("Search Result Count ::" + iCount);
+            elementClick(String.format(KILOMETER_RESULT, kilometers), "KILOMETER_RESULT");
         }
         else
         {

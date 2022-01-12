@@ -26,5 +26,5 @@ Feature: Search Listing
       @PROD @UI @REGRESSION
       Examples:
         |  ListingType  |  Keywords                         | Make  | Model   | YearFrom  | YearTo  | PriceFrom | PriceTo | BodyStyle         | numberPlate   | kilometer | seats |
-        |  Used         |  2011 Honda Insight S             | Honda | Insight | 2011      | 2012    |    $5K    | $7.5K   |  Hatchback        | GBK395        | 138,000km  | 5     |
+        |  Used         |  2011 Honda Insight S             | Honda | Insight | 2011      | 2012    |    $5K    | $7.5K   |  Hatchback        | FUA149        | 115,000km  | 5     |
         |  All          |  2013 Toyota Aqua S- Package      |Toyota | Aqua    | 2013      | 2014    |    $5K    | $15K    |  Hatchback        | NGY965        | 148,992km  | 5     |
