@@ -61,7 +61,7 @@ shipping options
 
 ### Built With
 
-Project built with Cucumber BDD framework using Java.
+Project built with Cucumber BDD framework using Selenium and Java.
 
 * [IntelliJ Commnuity Edition](https://www.jetbrains.com/idea/download/#section=windows/)
 * [Cucumber](https://cucumber.io//)
@@ -113,6 +113,7 @@ This runs all Cucumber features using TestNG runner.
 At the time of writing: 
 1. TradeMe Sandbox UI: Search any kind of listing isn’t working. I tried Motors, Jobs, Books, MarketPlace but no luck. So I automated those cases using TradeMe prod environment.
 2. TradeMe Sandbox API: Search Used Motor API isn’t working so just to demonstrate the authenticated API tests, I’ve utilized RetreiveWatchlist API and added a scenario in the feature file.
+3. UI Cases: Motor data provided in "ui_SearchMotor.feature" file is live data and can change. I'll try to keep it up to date so that scenarios can run end to end successfully.
 
 
 ### Ideal combination to run this test suite
